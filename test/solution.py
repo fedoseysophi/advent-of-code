@@ -38,7 +38,7 @@ def main():
                 output += int('1' * degree_n)
             output += input_n % (10 ** degree_n) + 1
 
-    # подсчет цифр начинающихся на ту же
+    #подсчет + вывод в output
     if degree_k != 0:
         output += int('1' * degree_k)
     output += input_k % (10 ** degree_k) + 1
@@ -46,7 +46,7 @@ def main():
     print("Calculation completed successfully!")
     return output
 
-#вывод в output
+
 if __name__ == "__main__":
     output_ = main()
     with open("output.txt", 'w') as f:
